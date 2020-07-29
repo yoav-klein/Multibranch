@@ -13,7 +13,7 @@ pipeline
         {
             steps
             {
-                echo "Master branch"
+                echo "kuku branch"
             }
         }
     }
