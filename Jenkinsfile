@@ -7,8 +7,9 @@ node('master') {
    stage('First') {
       def details = checkout scm
       env.GIT_DETAILS = details
-      println details.GIT_COMMIT
+      println env.GIT_DETAILS.GIT_COMMIT
       println details.getClass()
+      pritnln scm.getClass()
       bat script: 'set'
    }
 }
