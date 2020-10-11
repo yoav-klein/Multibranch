@@ -3,14 +3,9 @@
 
 //myJenkinsfile(Name: 'master')
 
-pipeline
-{
-   agent { label 'master' }
-   stages {
-      stage('Print env'){
-         steps {
-            bat script: 'set'
-         }
-      }
+node('master') {
+   stage('First') {
+      checkout scm
+      bat script: 'set'
    }
 }
