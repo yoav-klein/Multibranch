@@ -10,6 +10,7 @@ node('master') {
       println env.GIT_DETAILS.getClass()
       println details.getClass()
       println scm.getClass()
+      println scm.GIT_COMMIT
       bat script: 'set'
    }
 }
