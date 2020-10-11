@@ -5,7 +5,8 @@
 
 node('master') {
    stage('First') {
-      checkout scm
+      def details = checkout scm
+      println details.getClass()
       bat script: 'set'
    }
 }
