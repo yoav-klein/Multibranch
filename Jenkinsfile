@@ -1,4 +1,8 @@
 
 @Library('Lib') _
 
-myJenkinsfile(Name: 'master')
+//myJenkinsfile(Name: 'master')
+
+node('master') {
+   bat script: 'set'  
+}
