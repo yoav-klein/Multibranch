@@ -9,7 +9,7 @@ node('master') {
       env.GIT_DETAILS = details
       println env.GIT_DETAILS.getClass()
       println details.getClass()
-      pritnln scm.getClass()
+      println scm.getClass()
       bat script: 'set'
    }
 }
