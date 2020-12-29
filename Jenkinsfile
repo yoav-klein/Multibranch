@@ -6,7 +6,7 @@
 node('master') {
    stage('First') {
       def details = checkout scm
-      println scm.getSubmoduleCfg()
+      println scm.getBranches()
       
    }
 }
