@@ -7,6 +7,6 @@ node('master') {
    stage('First') {
       def details = checkout scm
       println scm.getBranches()
-      
+      powershell script: 'ls env:'  
    }
 }
